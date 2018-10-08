@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'app-temp-form',
@@ -6,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./temp-form.component.css']
 })
 export class TempFormComponent implements OnInit {
+  addform=[];
+
+  addresses = [];
 
   constructor() { }
 
@@ -14,7 +18,7 @@ export class TempFormComponent implements OnInit {
   temp(form) {
     console.log(form.value)
   }
-  add(){
-
+  addAddress() {
+    this.addresses.push({})
   }
 }
