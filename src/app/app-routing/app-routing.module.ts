@@ -10,7 +10,11 @@ const routes : Routes = [
   {
     path: 'login',
     loadChildren: '../login/login.module#LoginModule'
-  }
+  },
+  {
+    path: 'form',
+    loadChildren: '../form/form.module#FormModule'
+  } 
 ];
 
 @NgModule({
